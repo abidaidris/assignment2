@@ -1,0 +1,21 @@
+[project]
+name = "age"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "abidaidris", email = "abidaidris79@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "openai-agents>=0.0.14",
+    "python-dotenv>=1.1.0",
+]
+
+[project.scripts]
+age = "age:main"
+a = "age.min:my_first_agent"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
